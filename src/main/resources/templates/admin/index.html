@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Acceuil - admin</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="css/typography.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<!-- loader Start -->
+<div id="loading">
+    <div id="loading-center">
+        <div class="loader">
+            <div class="cube">
+                <div class="sides">
+                    <div class="top"></div>
+                    <div class="right"></div>
+                    <div class="bottom"></div>
+                    <div class="left"></div>
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- loader END -->
+<!-- Wrapper Start -->
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <div class="iq-sidebar">
+        <div class="iq-sidebar-logo d-flex justify-content-between">
+            <a href="#">
+                <img src="images/logo.png" class="img-fluid" alt="">
+                <span>CA</span>
+            </a>
+            <div class="iq-menu-bt align-self-center">
+                <div class="wrapper-menu">
+                    <div class="line-menu half start"></div>
+                    <div class="line-menu"></div>
+                    <div class="line-menu half end"></div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar-scrollbar">
+            <nav class="iq-sidebar-menu">
+                <ul id="iq-sidebar-toggle" class="iq-menu">
+                    <li class="iq-menu-title"><i class="ri-separator"></i><span>Acceuil</span></li>
+                    <li><a href="#" class="iq-waves-effect"><i class="ri-chat-check-line"></i><span>Page d'acceuil</span></a></li>
+
+                    <li class="iq-menu-title"><i class="ri-separator"></i><span>Créer</span></li>
+                    <li><a href="../admin/add-user/apprenti" class="iq-waves-effect"><i class="ri-chat-check-line"></i><span>Ajouter apprenti</span></a></li>
+                    <li><a href="../admin/add-entreprise" class="iq-waves-effect"><i class="ri-chat-check-line"></i><span>Ajouter entreprise</span></a></li>
+                    <li><a href="../admin/add-user/tuteur-insa" class="iq-waves-effect"><i class="ri-chat-check-line"></i><span>Ajouter tuteur INSA</span></a></li>
+                    <li><a href="../admin/add-user/tuteur-entreprise" class="iq-waves-effect"><i class="ri-chat-check-line"></i><span>Ajouter tuteur entreprise</span></a></li>
+                    <li class="iq-menu-title"><i class="ri-separator"></i><span>Listes</span></li>
+                    <li><a href="../admin/list-apprentis" class="iq-waves-effect"><i class="ri-chat-check-line"></i><span>Liste des apprentis</span></a></li>
+                    <li><a href="../admin/list-tuteurs-insa" class="iq-waves-effect"><i class=" ri-chat-check-line"></i><span>Liste des tuteurs INSA</span></a></li>
+                    <li><a href="../admin/list-tuteurs-entreprise" class="iq-waves-effect"><i class="ri-chat-check-line"></i><span>Liste des tuteurs entreprise</span></a></li>
+
+                    <li class="iq-menu-title"><i class="ri-separator"></i><span>Connexion</span></li>
+                    <li>
+                        <a href="#authentication" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false"><i class="ri-pages-line"></i><span>Authentication</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="authentication" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li><a href="../logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="p-3"></div>
+        </div>
+    </div>
+    <!-- TOP Nav Bar -->
+    <div class="iq-top-navbar">
+        <div class="iq-navbar-custom">
+            <div class="iq-sidebar-logo">
+                <div class="top-logo">
+                    <a href="#" class="logo">
+                        <img src="images/logo.png" class="img-fluid" alt="">
+                        <span>INS'APPRENTI</span>
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-breadcrumb">
+                <h5 class="mb-0">Ajouter un apprenti</h5>
+                <nav aria-label="breadcrumb">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Ajouter un apprenti</li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <div class="iq-menu-bt align-self-center">
+                    <div class="wrapper-menu">
+                        <div class="line-menu half start"></div>
+                        <div class="line-menu"></div>
+                        <div class="line-menu half end"></div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-list">
+                    </ul>
+                </div>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="/admin" class="iq-waves-effect bg-primary text-white">ADMIN</a>
+                        <div class="iq-sub-dropdown iq-user-dropdown">
+                            <div class="iq-card shadow-none m-0">
+                                <div class="iq-card-body p-0 ">
+                                    <div class="bg-primary p-3">
+                                    </div>
+
+
+                                    <div class="d-inline-block w-100 text-center p-3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- TOP Nav Bar END -->
+    <!-- Page Content  -->
+    <!-- Right Sidebar Panel Start-->
+    <div class="right-sidebar-mini">
+        <div class="right-sidebar-toggle">
+            <i class="ri-arrow-left-line side-left-icon"></i>
+            <i class="ri-arrow-right-line side-right-icon"></i>
+        </div>
+        <div class="right-sidebar-panel p-0">
+
+            <div class="iq-card shadow-none">
+                <div class="iq-card-header d-flex justify-content-between">
+                    <div class="iq-header-title">
+                        <h6 class="card-title">Active Users</h6>
+                    </div>
+                    <div class="iq-card-header-toolbar d-flex align-items-center">
+                        <div class="dropdown">
+                              <span class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" >
+                              <i class="ri-more-2-fill"></i>
+                              </span>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iq-card-body">
+                    <div class="media align-items-center mb-4">
+                        <div class="iq-profile-avatar status-online">
+                            <img class="rounded-circle avatar-60" src="images/user/01.jpg" alt="">
+                        </div>
+                        <div class="media-body ml-3">
+                            <h6 class="mb-0"><a href="#">Anna Sthesia</a></h6>
+                            <p class="mb-0">Admin</p>
+                        </div>
+                    </div>
+                    <div class="media align-items-center mb-4">
+                        <div class="iq-profile-avatar status-online">
+                            <img class="rounded-circle avatar-60" src="images/user/02.jpg" alt="">
+                        </div>
+                        <div class="media-body ml-3">
+                            <h6 class="mb-0"><a href="#">Paul Molive</a></h6>
+                            <p class="mb-0">Admin</p>
+                        </div>
+                    </div>
+                    <div class="media align-items-center mb-4">
+                        <div class="iq-profile-avatar status-online">
+                            <img class="rounded-circle avatar-60" src="images/user/03.jpg" alt="">
+                        </div>
+                        <div class="media-body ml-3">
+                            <h6 class="mb-0"><a href="#">Anna Mull</a></h6>
+                            <p class="mb-0">Admin</p>
+                        </div>
+                    </div>
+                    <div class="media align-items-center mb-4">
+                        <div class="iq-profile-avatar status-online">
+                            <img class="rounded-circle avatar-60" src="images/user/04.jpg" alt="">
+                        </div>
+                        <div class="media-body ml-3">
+                            <h6 class="mb-0"><a href="#">Paige Turner</a></h6>
+                            <p class="mb-0">Admin</p>
+                        </div>
+                    </div>
+                    <div class="media align-items-center mb-4">
+                        <div class="iq-profile-avatar status-online">
+                            <img class="rounded-circle avatar-60" src="images/user/01.jpg" alt="">
+                        </div>
+                        <div class="media-body ml-3">
+                            <h6 class="mb-0"><a href="#">Bob Frapples</a></h6>
+                            <p class="mb-0">Admin</p>
+                        </div>
+                    </div>
+                    <div class="media align-items-center mb-4">
+                        <div class="iq-profile-avatar status-online">
+                            <img class="rounded-circle avatar-60" src="images/user/02.jpg" alt="">
+                        </div>
+                        <div class="media-body ml-3">
+                            <h6 class="mb-0"><a href="#">Barb Ackue</a></h6>
+                            <p class="mb-0">Admin</p>
+                        </div>
+                    </div>
+                    <div class="media align-items-center mb-4">
+                        <div class="iq-profile-avatar status-online">
+                            <img class="rounded-circle avatar-60" src="images/user/03.jpg" alt="">
+                        </div>
+                        <div class="media-body ml-3">
+                            <h6 class="mb-0"><a href="#">Greta Life</a></h6>
+                            <p class="mb-0">Admin</p>
+                        </div>
+                    </div>
+                    <div class="media align-items-center mb-4">
+                        <div class="iq-profile-avatar status-away">
+                            <img class="rounded-circle avatar-60" src="images/user/04.jpg" alt="">
+                        </div>
+                        <div class="media-body ml-3">
+                            <h6 class="mb-0"><a href="#">Ira Membrit</a></h6>
+                            <p class="mb-0">Admin</p>
+                        </div>
+                    </div>
+                    <div class="media align-items-center mb-4">
+                        <div class="iq-profile-avatar status-away">
+                            <img class="rounded-circle avatar-60" src="images/user/01.jpg" alt="">
+                        </div>
+                        <div class="media-body ml-3">
+                            <h6 class="mb-0"><a href="#">Pete Sariya</a></h6>
+                            <p class="mb-0">Admin</p>
+                        </div>
+                    </div>
+                    <div class="media align-items-center">
+                        <div class="iq-profile-avatar">
+                            <img class="rounded-circle avatar-60" src="images/user/02.jpg" alt="">
+                        </div>
+                        <div class="media-body ml-3">
+                            <h6 class="mb-0"><a href="#">Monty Carlo</a></h6>
+                            <p class="mb-0">Admin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Right Sidebar Panel End-->
+    <div id="content-page" class="content-page">
+        <div class="container-fluid">
+            <div class="row row-eq-height">
+                <!-- Content Top Banner Start -->
+                <div class="col-md-12 col-lg-12">
+                    <div class="iq-card bg-primary sb-top-banner-card iq-card-block iq-card-stretch iq-card-height">
+                        <div class="iq-card-body pt-5 pb-5">
+                            <div class="row">
+                                <div class="col-md-6 align-self-center">
+                                    <h2 class="text-white">Bonjour admin !</h2>
+                                    <p class="text-white">Vous êtes connecté en tant qu'admin.</p>
+                                    <button type="button" class="btn iq-bg-primary">Logout</button>
+                                </div>
+                                <div class="col-md-6 position-relative">
+                                    <div class="an-img-two">
+                                        <div class="bodymovin" data-bm-path="images/small/data1.json" data-bm-renderer="svg" data-bm-loop="true"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="iq-card iq-card-block iq-card-stretch iq-card-height-half col-md-12 col-lg-6">
+                        <div class="iq-card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <span class="font-size-14">Nombre des comptes</span>
+                                    <h3 th:value="${accounts_nbr}"></h3>
+                                    <div class="iq-progress-bar-linear d-inline-block w-100 float-left mt-3">
+                                        <div class="iq-progress-bar">
+                                            <span class="bg-primary" data-percent="90"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class=" iq-card iq-card-block iq-card-stretch iq-card-height-half col-md-12 col-lg-6">
+                        <div class="iq-card-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <span class="font-size-14">Nombre des entreprises</span>
+                                    <h3 th:value="${entreprises_nbr}"></h3>
+                                    <div class="iq-progress-bar-linear d-inline-block w-100 float-left mt-3">
+                                        <div class="iq-progress-bar">
+                                            <span class="bg-danger" data-percent="90"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+                <!-- Content Top Banner End -->
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-8">
+                            <div class="iq-card iq-card-block iq-card-stretch iq-card-height overflow-hidden wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                        <h4 class="card-title">Variation des comptes créés</h4>
+                                    </div>
+                                </div>
+                                <div class="iq-card-body p-0">
+
+                                    <div id="chart-11"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="iq-card iq-card-block iq-card-stretch iq-card-height wow fadeInUp" data-wow-delay="0.6s">
+                                <div class="iq-card-header d-flex justify-content-between">
+                                    <div class="iq-header-title">
+                                        <h4 class="card-title">Distribution des comptes</h4>
+                                    </div>
+                                    <div class="iq-card-header-toolbar d-flex align-items-center">
+                                        <div class="dropdown">
+                                    <span class="dropdown-toggle text-primary" id="dropdownMenuButton3" data-toggle="dropdown">
+                                    <i class="ri-more-2-fill"></i>
+                                    </span>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                                <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
+                                                <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
+                                                <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
+                                                <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iq-card-body">
+                                    <div id="Dash1DonetChart"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="iq-card dash-hover-gradient iq-card-block iq-card-stretch iq-card-height">
+                                <div class="iq-card-body">
+                                    <h3>Ajouter un étudiant apprenti</h3>
+                                    <p class="mb-0">Créer un compte pour un apprenti sur l'application.</p>
+                                </div>
+                                <div class="card-action font-size-14 p-3">
+                                    <button><a href="/admin/add-user/apprenti"><span class="float-right">Ajouter</span></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="iq-card dash-hover-gradient iq-card-block iq-card-stretch iq-card-height">
+                                <div class="iq-card-body">
+                                    <h3>Ajouter un tuteur INSA</h3>
+                                    <p class="mb-0">Créer un compte pour un tuteur INSA sur l'application.</p>
+                                </div>
+                                <div class="card-action font-size-14 p-3">
+                                    <button><a href="/admin/add-user/tuteur-insa"><span class="float-right">Ajouter</span></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="iq-card dash-hover-gradient iq-card-block iq-card-stretch iq-card-height">
+                                <div class="iq-card-body">
+                                    <h3>Ajouter un tuteur entreprise</h3>
+                                    <p class="mb-0">Créer un compte pour un tuteur entreprise sur l'application.</p>
+                                </div>
+                                <div class="card-action font-size-14 p-3">
+                                    <button><a href="/admin/add-user/tuteur-entreprise"><span class="float-right">Ajouter</span></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="iq-card dash-hover-gradient iq-card-block iq-card-stretch iq-card-height">
+                                <div class="iq-card-body">
+                                    <h3>Ajouter une entreprise</h3>
+                                    <p class="mb-0">Créer une entreprise sur l'application.</p>
+                                </div>
+                                <div class="card-action font-size-14 p-3">
+                                    <button><a href="/admin/add-entreprise"><span class="float-right">Ajouter</span></a> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Wrapper END -->
+<!-- Footer -->
+<footer class="bg-white iq-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+
+            </div>
+            <div class="col-lg-6 text-right">
+                Copyright 2024 <a href="#">INS'APPRENTI</a> Tous droits réservés.
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer END -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../../js/design/jquery.min.js"></script>
+<script src="../../js/design/popper.min.js"></script>
+<script src="../../js/design/bootstrap.min.js"></script>
+<!-- Appear JavaScript -->
+<script src="../../js/design/jquery.appear.js"></script>
+<!-- Countdown JavaScript -->
+<script src="../../js/design/countdown.min.js"></script>
+<!-- Counterup JavaScript -->
+<script src="../../js/design/waypoints.min.js"></script>
+<script src="../../js/design/jquery.counterup.min.js"></script>
+<!-- Wow JavaScript -->
+<script src="../../js/design/wow.min.js"></script>
+<!-- Apexcharts JavaScript -->
+<script src="../../js/design/apexcharts.js"></script>
+<!-- Slick JavaScript -->
+<script src="../../js/design/slick.min.js"></script>
+<!-- Select2 JavaScript -->
+<script src="../../js/design/select2.min.js"></script>
+<!-- Owl Carousel JavaScript -->
+<script src="../../js/design/owl.carousel.min.js"></script>
+<!-- Magnific Popup JavaScript -->
+<script src="../../js/design/jquery.magnific-popup.min.js"></script>
+<!-- Smooth Scrollbar JavaScript -->
+<script src="../../js/design/smooth-scrollbar.js"></script>
+<!-- lottie JavaScript -->
+<script src="../../js/design/lottie.js"></script>
+<!-- Chart Custom JavaScript -->
+<script src="../../js/design/chart-custom.js"></script>
+
+<script src="../../js/admin/list-users.js"></script>
+<!-- Custom JavaScript -->
+<script src="../../js/design/custom.js"></script>
+</body>
+</html>

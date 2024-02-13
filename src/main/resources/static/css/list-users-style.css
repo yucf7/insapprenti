@@ -1,0 +1,11 @@
+#apprentiTable thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f5f5f5;
+    z-index: 2;
+}
+.users-table-container {
+    max-height: 400px;
+    overflow: auto;
+}
+

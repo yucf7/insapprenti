@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <title>Liste des missions</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../../../images/favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="../../../css/typography.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../../../css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../../../css/responsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
+</head>
+<body>
+
+<!-- Wrapper Start -->
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <div class="iq-sidebar">
+        <div class="iq-sidebar-logo d-flex justify-content-between">
+            <a href="index.html">
+                <img src="images/logo.png" class="img-fluid" alt="">
+                <span>Sofbox</span>
+            </a>
+            <div class="iq-menu-bt align-self-center">
+                <div class="wrapper-menu">
+                    <div class="line-menu half start"></div>
+                    <div class="line-menu"></div>
+                    <div class="line-menu half end"></div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar-scrollbar">
+            <nav class="iq-sidebar-menu">
+                <ul id="iq-sidebar-toggle" class="iq-menu">
+                    <li class="iq-menu-title"><i class="ri-separator"></i><span>MISSION</span></li>
+                    <li><a href="/listerMission" class="iq-waves-effect"><i class="ri-chat-check-line"></i><span>Lister les missions</span></a></li>
+
+
+                    <li class="iq-menu-title"><i class="ri-separator"></i><span>Connexion</span></li>
+                    <li>
+                        <a href="#authentication" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false"><i class="ri-pages-line"></i><span>Authentication</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="authentication" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li><a href="/logout">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="p-3"></div>
+        </div>
+    </div>
+    <!-- TOP Nav Bar -->
+    <div class="iq-top-navbar">
+        <div class="iq-navbar-custom">
+            <div class="iq-sidebar-logo">
+                <div class="top-logo">
+                    <a href="index" class="logo">
+                        <img src="images/logo.png" class="img-fluid" alt="">
+                        <span>Sofbox</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <div class="iq-menu-bt align-self-center">
+                    <div class="wrapper-menu">
+                        <div class="line-menu half start"></div>
+                        <div class="line-menu"></div>
+                        <div class="line-menu half end"></div>
+                    </div>
+                </div>
+                <!--Il a un effet sur la position de btn de profile fait apporter des changement avnt de la supprimer -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <h3>test</h3>
+                </div>
+
+                <!-- contenu de la liste qui s'affiche quand on clique sur btn de profile a modifier apres -->
+                <ul class="navbar-list">
+                    <li>
+                        <a href="#" class="search-toggle iq-waves-effect bg-primary text-white"><img src="images/user/1.jpg" class="img-fluid rounded" alt="user"></a>
+                        <div class="iq-sub-dropdown iq-user-dropdown">
+                            <div class="iq-card shadow-none m-0">
+                                <div class="iq-card-body p-0 ">
+                                    <div class="bg-primary p-3">
+                                        <h5 class="mb-0 text-white line-height">Hello Nik jone</h5>
+                                        <span class="text-white font-size-12">Available</span>
+                                    </div>
+                                    <a href="../profile.html" class="iq-sub-card iq-bg-primary-hover">
+                                        <div class="media align-items-center">
+                                            <div class="rounded iq-card-icon iq-bg-primary">
+                                                <i class="ri-file-user-line"></i>
+                                            </div>
+                                            <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">My Profile</h6>
+                                                <p class="mb-0 font-size-12">View personal profile details.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="../profile-edit.html" class="iq-sub-card iq-bg-primary-success-hover">
+                                        <div class="media align-items-center">
+                                            <div class="rounded iq-card-icon iq-bg-success">
+                                                <i class="ri-profile-line"></i>
+                                            </div>
+                                            <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Edit Profile</h6>
+                                                <p class="mb-0 font-size-12">Modify your personal details.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="../account-setting.html" class="iq-sub-card iq-bg-primary-danger-hover">
+                                        <div class="media align-items-center">
+                                            <div class="rounded iq-card-icon iq-bg-danger">
+                                                <i class="ri-account-box-line"></i>
+                                            </div>
+                                            <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Account settings</h6>
+                                                <p class="mb-0 font-size-12">Manage your account parameters.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="../privacy-setting.html" class="iq-sub-card iq-bg-primary-secondary-hover">
+                                        <div class="media align-items-center">
+                                            <div class="rounded iq-card-icon iq-bg-secondary">
+                                                <i class="ri-lock-line"></i>
+                                            </div>
+                                            <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Privacy Settings</h6>
+                                                <p class="mb-0 font-size-12">Control your privacy parameters.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="d-inline-block w-100 text-center p-3">
+                                        <a class="iq-bg-danger iq-sign-btn" href="sign-in.html" role="button">Sign out<i class="ri-login-box-line ml-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+    <div id="content-page" class="content-page">
+        <div class="container-fluid">
+            <div class="row row-eq-height">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="iq-card iq-border-radius-20">
+                                <div class="iq-card-body">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-3">
+                                            <h5 class="text-primary card-title"><i class="ri-pencil-fill"></i> Modifier une mission</h5>
+                                        </div>
+                                    </div>
+                                    <form th:action="@{'/apprenti/dashboard/modifierMission/' + ${mission.id}}" th:object="${mission}" method="post">
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Titre: </label>
+                                            <div class="col-sm-10">
+                                                <input type="text" th:field="*{nom}" class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Description: </label>
+                                            <div class="col-sm-10">
+                                                <textarea th:field="*{description}" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <label class="col-sm-2 col-form-label">Objectif: </label>
+                                            <div class="col-sm-10">
+                                                <textarea class="form-control" th:field="*{objectif}"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="input-group row mb-3">
+                                            <label class="col-sm-2 col-form-label">Date de début:</label>
+                                            <div class="col-sm-4">
+                                                <input class="form-control" type="date" th:field="*{dateDebut}" id="dateDebut" onchange="validateDates()" />
+                                            </div>
+                                        </div>
+
+                                        <div class="input-group row mb-3">
+                                            <label class="col-sm-2 col-form-label">Date de fin:</label>
+                                            <div class="col-sm-4">
+                                                <input class="form-control" type="date" th:field="*{dateFin}" id="dateFin" onchange="validateDates()" />
+                                            </div>
+                                        </div>
+                                        <script>
+                                            function validateDates() {
+                                                var startDate = document.getElementById('dateDebut').value;
+                                                var endDateInput = document.getElementById('dateFin');
+
+                                                // Désactiver les dates antérieures à la date de début
+                                                endDateInput.min = startDate;
+
+                                                var endDate = endDateInput.value;
+
+                                                if (startDate && endDate && startDate > endDate) {
+                                                    alert("La date de début doit être inférieure à la date de fin.");
+                                                    // Vous pouvez également désactiver le bouton de soumission ou apporter d'autres modifications selon vos besoins.
+                                                }
+                                            }
+                                        </script>
+
+                                        <div class="input-group row mb-3">
+                                            <label class="col-sm-2 col-form-label">Résultat:</label>
+                                            <div class="col-sm-10">
+                                                <textarea class="form-control" th:field="*{resultat}"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <!-- Champs pour la compétence acquise -->
+                                        <div class="competence-section row" th:each="competence, iterStat : ${mission.competencesAcquises}">
+                                            <div class="col-md-12">
+                                                <div class="form-group row mb-3">
+                                                    <label class="col-sm-2 col-form-label">Choisissez une compétence:</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-control" aria-label="Compétence" th:field="*{competencesAcquises[__${iterStat.index}__].competence.id}">
+                                                            <option value="" disabled selected>Choisissez une compétence</option>
+                                                            <option th:each="comp : ${competences}" th:value="${comp.id}" th:text="${comp.nom}" th:selected="${comp.id == competence.competence.id}"></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row mb-3">
+                                                    <label class="col-sm-2 col-form-label">Niveau:</label>
+                                                    <div class="col-sm-10">
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="niveau_" th:field="*{competencesAcquises[__${iterStat.index}__].niveau}" value="1" th:checked="${competence.niveau == 1}">
+                                                            <label class="form-check-label">Niveau 1</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="niveau_" th:field="*{competencesAcquises[__${iterStat.index}__].niveau}" value="2" th:checked="${competence.niveau == 2}">
+                                                            <label class="form-check-label">Niveau 2</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="niveau_" th:field="*{competencesAcquises[__${iterStat.index}__].niveau}" value="3" th:checked="${competence.niveau == 3}">
+                                                            <label class="form-check-label">Niveau 3</label>
+                                                        </div>
+                                                        <div class="form-check form-check-inline">
+                                                            <input class="form-check-input" type="radio" name="niveau_" th:field="*{competencesAcquises[__${iterStat.index}__].niveau}" value="4" th:checked="${competence.niveau == 4}">
+                                                            <label class="form-check-label">Niveau 4</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row mb-3">
+                                                    <label class="col-sm-2 col-form-label">Justification du niveau:</label>
+                                                    <div class="col-sm-10">
+                                                        <textarea class="form-control" name="justification" th:field="*{competencesAcquises[__${iterStat.index}__].justification}" th:text="${competence.justification}"></textarea>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <button type="button" class="btn btn-primary mb-3" onclick="duplicateSection()">Ajouter une compétence</button>
+                                        <button type="submit" class="btn btn-primary mb-3">Modifier</button>
+                                    </form>
+                                    <script>
+                                        var originalSection = document.querySelector('.competence-section');
+
+                                        function duplicateSection() {
+                                            var clonedSection = originalSection.cloneNode(true);
+                                            clonedSection.style.display = 'block'; // Rendre la section visible
+
+                                            // Update the name attribute for radio buttons
+                                            clonedSection.querySelectorAll('input[type="radio"]').forEach(function (element) {
+                                                var newIndex = document.querySelectorAll('.competence-section').length; // Get the new index
+                                                element.name = 'niveau_' + newIndex;
+                                            });
+
+                                            // Effacer les valeurs des champs clonés
+                                            clonedSection.querySelectorAll('input[type="text"], input[type="date"], textarea').forEach(function (element) {
+                                                element.value = '';
+                                            });
+
+                                            // Bouton de suppression
+                                            var removeButton = document.createElement('button');
+                                            removeButton.type = 'button';
+                                            removeButton.className = 'btn btn-danger';
+                                            removeButton.textContent = 'Supprimer';
+                                            removeButton.onclick = function () {
+                                                removeSection(clonedSection);
+                                            };
+                                            clonedSection.appendChild(removeButton);
+
+                                            document.querySelector('form').insertBefore(clonedSection, document.querySelector('button[type="submit"]'));
+                                        }
+
+                                        function removeSection(section) {
+                                            section.parentNode.removeChild(section);
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer class="bg-white iq-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="terms-of-service.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 text-right">
+                Copyright 2020 <a href="#">Sofbox</a> All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Footer END -->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/popper.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<!-- Appear JavaScript -->
+<script src="../../../js/jquery.appear.js"></script>
+<!-- Countdown JavaScript -->
+<script src="../../../js/countdown.min.js"></script>
+<!-- Counterup JavaScript -->
+<script src="../../../js/waypoints.min.js"></script>
+<script src="../../../js/jquery.counterup.min.js"></script>
+<!-- Wow JavaScript -->
+<script src="../../../js/wow.min.js"></script>
+<!-- Apexcharts JavaScript -->
+<script src="../../../js/apexcharts.js"></script>
+<!-- Slick JavaScript -->
+<script src="../../../js/slick.min.js"></script>
+<!-- Select2 JavaScript -->
+<script src="../../../js/select2.min.js"></script>
+<!-- Owl Carousel JavaScript -->
+<script src="../../../js/owl.carousel.min.js"></script>
+<!-- Magnific Popup JavaScript -->
+<script src="../../../js/jquery.magnific-popup.min.js"></script>
+<!-- Smooth Scrollbar JavaScript -->
+<script src="../../../js/smooth-scrollbar.js"></script>
+<!-- lottie JavaScript -->
+<script src="../../../js/lottie.js"></script>
+<!-- Chart Custom JavaScript -->
+<script src="../../../js/chart-custom.js"></script>
+<!-- Custom JavaScript -->
+<script src="../../../js/custom.js"></script>
+
+
+<script src="../../../js/add-user.js"></script>
+</body>
+</html>

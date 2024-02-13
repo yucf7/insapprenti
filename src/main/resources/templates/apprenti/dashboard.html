@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>INS'APPRENTI - Responsive Bootstrap 4 Admin Dashboard Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../../images/favicon.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <!-- Typography CSS -->
+    <link rel="stylesheet" href="../../../css/typography.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../../../css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="../../../css/responsive.css">
+</head>
+<body>
+<!-- loader Start -->
+<div id="loading">
+    <div id="loading-center">
+        <div class="loader">
+            <div class="cube">
+                <div class="sides">
+                    <div class="top"></div>
+                    <div class="right"></div>
+                    <div class="bottom"></div>
+                    <div class="left"></div>
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- loader END -->
+<!-- Wrapper Start -->
+<div class="wrapper">
+    <!-- Sidebar  -->
+    <div class="iq-sidebar">
+        <div class="iq-sidebar-logo d-flex justify-content-between">
+            <a href="index.html">
+                <img src="images/logo.png" class="img-fluid" alt="">
+                <span>INS'APPRENTI</span>
+            </a>
+            <div class="iq-menu-bt align-self-center">
+                <div class="wrapper-menu">
+                    <div class="line-menu half start"></div>
+                    <div class="line-menu"></div>
+                    <div class="line-menu half end"></div>
+                </div>
+            </div>
+        </div>
+        <div id="sidebar-scrollbar">
+            <nav class="iq-sidebar-menu">
+                <ul id="iq-sidebar-toggle" class="iq-menu">
+                    <li>
+                        <a href="#user-info" class="iq-waves-effect collapsed"  data-toggle="collapse" aria-expanded="false"><i class="ri-user-line"></i><span>Missions</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                        <ul id="user-info" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                            <li><a href="/apprenti/dashboard/listerMission">Lister Mission</a></li>
+                            <li><a href="/apprenti/dashboard/addMission">Ajouter Mission</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="p-3"></div>
+        </div>
+    </div>
+    <!-- TOP Nav Bar -->
+    <div class="iq-top-navbar">
+        <div class="iq-navbar-custom">
+            <div class="iq-sidebar-logo">
+                <div class="top-logo">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" class="img-fluid" alt="">
+                        <span>INS'APPRENTI</span>
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-breadcrumb">
+                <h5 class="mb-0">Dashboard</h5>
+                <nav aria-label="breadcrumb">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Home</li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="ri-menu-3-line"></i>
+                </button>
+                <div class="iq-menu-bt align-self-center">
+                    <div class="wrapper-menu">
+                        <div class="line-menu half start"></div>
+                        <div class="line-menu"></div>
+                        <div class="line-menu half end"></div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                </div>
+                <ul class="navbar-list">
+                    <li>
+                        <a href="#" class="search-toggle iq-waves-effect bg-primary text-white"><img src="images/user/1.jpg" class="img-fluid rounded" alt="user"></a>
+                        <div class="iq-sub-dropdown iq-user-dropdown">
+                            <div class="iq-card iq-card-block iq-card-stretch iq-card-height shadow-none m-0">
+                                <div class="iq-card-body p-0 ">
+                                    <div class="bg-primary p-3">
+                                        <h5 class="mb-0 text-white line-height">Hello Nik jone</h5>
+                                        <span class="text-white font-size-12">Available</span>
+                                    </div>
+                                    <a href="account-setting.html" class="iq-sub-card iq-bg-primary-danger-hover">
+                                        <div class="media align-items-center">
+                                            <div class="rounded iq-card-icon iq-bg-danger">
+                                                <i class="ri-account-box-line"></i>
+                                            </div>
+                                            <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Account settings</h6>
+                                                <p class="mb-0 font-size-12">Manage your account parameters.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="privacy-setting.html" class="iq-sub-card iq-bg-primary-secondary-hover">
+                                        <div class="media align-items-center">
+                                            <div class="rounded iq-card-icon iq-bg-secondary">
+                                                <i class="ri-lock-line"></i>
+                                            </div>
+                                            <div class="media-body ml-3">
+                                                <h6 class="mb-0 ">Privacy Settings</h6>
+                                                <p class="mb-0 font-size-12">Control your privacy parameters.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="d-inline-block w-100 text-center p-3">
+                                        <a class="iq-bg-danger iq-sign-btn" href="sign-in.html" role="button">Sign out<i class="ri-login-box-line ml-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row row-eq-height">
+            <div class="col-md-12 col-lg-12" style="margin-top: 100px">
+                <div class="iq-card bg-primary sb-top-banner-card iq-card-block iq-card-stretch iq-card-height">
+                    <div class="iq-card-body pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-md-6 align-self-center">
+                                <h2 class="text-white">Bonjour Apprenti !</h2>
+                                <p class="text-white">Vous êtes connecté en tant que Apprenti.</p>
+                                <button type="button" class="btn iq-bg-primary">Logout</button>
+                            </div>
+                            <div class="col-md-6 position-relative">
+                                <div class="an-img-two">
+                                    <div class="bodymovin" data-bm-path="../../../../../images/small/data1.json" data-bm-renderer="svg" data-bm-loop="true"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="content-page" class="content-page">
+        <div style="padding-left: 360px; justify-content: space-between;">
+            <h5 style="padding-right: 410px; color: #4d79ff; margin-bottom: 40px; text-align: center;">Actions possibles</h5>
+            <div style="display: flex; padding-bottom: 20px;">
+                <div style="margin-right: 60px; padding: 20px; width: 200px; background-color: #4d79ff; box-shadow: 10px 10px;">
+                    <div><a th:href="@{'/apprenti/dashboard/profil/' + ${apprenti.id}}" class="title" style="color: white;">Voir Profil</a></div>
+                </div>
+                <div style="margin-left: 10px; padding: 20px; width: 200px; background-color: #4d79ff; box-shadow: 10px 10px;">
+                    <div><a href="/apprenti/dashboard/listerMission" class="title" style="color: white;">Voir Missions</a></div>
+                </div>
+            </div>
+            <div style="display: flex; ">
+                <div style="margin-right: 60px; padding: 20px; width: 200px; background-color:#4d79ff; box-shadow: 10px 10px;">
+                    <div><a href="/apprenti/dashboard/addMission" class="title" style="color: white;">Ajouter Missions</a></div>
+                </div>
+                <div style="margin-left: 10px; padding: 20px; width: 200px; background-color: #4d79ff; box-shadow: 10px 10px;">
+                    <div><a href="/apprenti/dashboard/visualiserNote" class="title" style="color: white;">Voir les commentaires</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- Wrapper END -->
+<!-- Footer -->
+<footer class="bg-white iq-footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="terms-of-service.html">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-6 text-right">
+                Copyright 2020 <a href="#">INS'APPRENTI</a> All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../../../js/jquery.min.js"></script>
+<script src="../../../js/popper.min.js"></script>
+<script src="../../../js/bootstrap.min.js"></script>
+<!-- Appear JavaScript -->
+<script src="../../../js/jquery.appear.js"></script>
+<!-- Countdown JavaScript -->
+<script src="../../../js/countdown.min.js"></script>
+<!-- Counterup JavaScript -->
+<script src="../../../js/waypoints.min.js"></script>
+<script src="../../../js/jquery.counterup.min.js"></script>
+<!-- Wow JavaScript -->
+<script src="../../../js/wow.min.js"></script>
+<!-- Apexcharts JavaScript -->
+<script src="../../../js/apexcharts.js"></script>
+<!-- Slick JavaScript -->
+<script src="../../../js/slick.min.js"></script>
+<!-- Select2 JavaScript -->
+<script src="../../../js/select2.min.js"></script>
+<!-- Owl Carousel JavaScript -->
+<script src="../../../js/owl.carousel.min.js"></script>
+<!-- Magnific Popup JavaScript -->
+<script src="../../../js/jquery.magnific-popup.min.js"></script>
+<!-- Smooth Scrollbar JavaScript -->
+<script src="../../../js/smooth-scrollbar.js"></script>
+<!-- lottie JavaScript -->
+<script src="../../../js/lottie.js"></script>
+<!-- Chart Custom JavaScript -->
+<script src="../../../js/chart-custom.js"></script>
+<!-- Custom JavaScript -->
+<script src="../../../js/custom.js"></script>
+
+
+<script src="../../../js/add-user.js"></script>
+</body>
+</html>
